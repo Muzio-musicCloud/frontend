@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+}
+
+.container{
+  width: 18rem;
+  height: 99vh;
+  border: solid 1px black;
+}
+
+.headerContainer{
+  display: flex;
+}
+
+.menuContainer{
+  width: 18rem;
+  height: 18rem;
+  border: solid 1px black;
+  margin-top: 6.5rem;
+}
