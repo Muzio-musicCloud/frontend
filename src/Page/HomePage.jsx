@@ -5,8 +5,11 @@ import SideBar from "../component/sideBar";
 const HomePage = ({children}) => {
   return(
     <SideBar>
-      <Header />
+      <Header>
+        <Home/>
+      </Header>
     </SideBar>
+    
   )
 }
 

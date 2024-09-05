@@ -7,19 +7,31 @@ body{
 }
 
 .container{
+  height: 99.9vh;
+  position: fixed;
+}
+
+.container1{
   width: 18rem;
   height: 99.9vh;
-  border-right: solid 1px black;
 }
+
 
 .headerContainer{
   display: flex;
 }
 
+.subContaienr{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid rgb(150, 150, 150);
+}
+
 .menuContainer{
+  padding-top: 3rem;
   width: 18rem;
   height: 18rem;
-  margin-top: 6.5rem;
 }
 
 .home{
@@ -76,4 +88,31 @@ body{
 .menu{
   margin-left: 7%;
   font-size: 20px;
+}
+
+.title{
+  width: 100%;
+  height: 5rem;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: solid 1px rgb(150, 150, 150);
+}
+
+.title.scrolled {
+  border-right: none;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  background-color: #565656;
+}
+
+
+@media (max-width: 1000px){
+  .container{
+    display: none;
+  }
+  .container1{
+    display: none;
+  }
 }
