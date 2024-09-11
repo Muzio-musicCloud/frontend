@@ -1,4 +1,6 @@
 import styles from "../style/home.module.css";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { IoMenu } from "react-icons/io5";
 
 const Home = () => {
   return(
@@ -35,7 +37,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div className={styles.popularArtistContainer}>
           <div className={styles.texts}>
             <div className={styles.popularTrack}>인기있는 아티스트</div>

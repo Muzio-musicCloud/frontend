@@ -1,0 +1,151 @@
+.playContainer{
+  width: 20rem;
+  height: 35rem;
+  background-color: #575757;
+  position: fixed;
+  top: 15%;
+  right: 3%;
+  border-radius: 15px;
+}
+
+.playHeader{
+  width: 85%;
+  height: 8%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.wave{
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.playing{
+  color: white;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.minus{
+  margin-left: auto;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.img{
+  width: 80%;
+  height: 24%;
+  background: radial-gradient(circle at top left,  black 60%, rgb(66, 66, 66));
+  margin: 0 auto;
+  margin-top: 2%;
+  border-radius: 15px;
+}
+
+.title{
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  margin-top: 2%;
+}
+
+.artist{
+  width: 80%;
+  margin: 0 auto;
+  color: #CFCFCF;
+  margin-top: 0.5%;
+}
+
+.playIconsContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 63%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.playIcons{
+  color: white;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.play{
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.playBarContainer{
+  width: 85%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.startTime{
+  font-size: 0.8rem;
+  color: white;
+}
+
+.endTime{
+  font-size: 0.8rem;
+  color: white;
+}
+
+.playBar{
+  width: 70%;
+  height: 0.2rem;
+  background-color: #D9D9D9;
+  margin-top: 0.1rem;
+}
+
+.playTime{
+  width: 70%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.bottomLine{
+  width: 75%;
+  border: 1px rgb(116, 116, 116) solid;
+  height: 0;
+  margin: 0 auto;
+  margin-top: 7%;
+}
+
+.nextPlay{
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.none{
+  width: 85%;
+  margin: 0 auto;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.plus{
+  position: fixed;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  right: 3%;
+  top: 15%;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from "../style/header.module.css";
 import { IoIosNotifications } from "react-icons/io";
+import { IoMenu } from "react-icons/io5";
 
 const Header = ({ children }) => {
   const [isTop, setIsTop] = useState(true);
@@ -11,7 +12,7 @@ const Header = ({ children }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // 초기 상태 설정
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);

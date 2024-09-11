@@ -1,36 +1,36 @@
-*{
-  margin: 0; 
+* {
+  margin: 0;
 }
 
-body{
+body {
   background: linear-gradient(to bottom, #4E4E4E, #939393);
 }
 
-.container{
+.container {
+  width: 41vh;
   height: 99.9vh;
   position: fixed;
 }
 
-.container1{
-  width: 18rem;
+.container1 {
+  width: 41vh;
   height: 99.9vh;
 }
 
-
-.headerContainer{
+.headerContainer {
   display: flex;
 }
 
-.subContaienr{
+.subContainer {
   display: grid;
   width: 100%;
   height: 100%;
   border-right: 1px solid rgb(150, 150, 150);
 }
 
-.menuContainer{
+.menuContainer {
   padding-top: 3rem;
-  width: 18rem;
+  width: 100%;
   height: 18rem;
 }
 
@@ -79,18 +79,18 @@ body{
   color: white;
 }
 
-.icon{
+.icon {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 13%;
 }
 
-.menu{
+.menu {
   margin-left: 7%;
   font-size: 20px;
 }
 
-.title{
+.title {
   width: 100%;
   height: 5rem;
   color: white;
@@ -107,12 +107,45 @@ body{
   background-color: #565656;
 }
 
+.veiwIcon {
+  position: fixed;
+  color: white;
+  left: 1.5rem;
+  top: 1.45rem;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+  z-index: 1;
+  cursor: pointer;
+}
 
-@media (max-width: 1000px){
-  .container{
+.veiwIcon:hover {
+  background-color: #838383;
+}
+
+.HiddenContainer {
+  height: 99.9vh;
+  position: fixed;
+  background: linear-gradient(to bottom, #4E4E4E, #939393);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.HiddenContainer.show {
+  transform: translateX(0);
+}
+
+@media (max-width: 1200px) {
+  .container {
     display: none;
   }
-  .container1{
+  .container1 {
     display: none;
+  }
+  .veiwIcon {
+    display: block;
+  }
+  .title{
+    font-size: 0;
   }
 }
