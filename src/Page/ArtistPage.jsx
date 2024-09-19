@@ -2,16 +2,18 @@ import Header from "../component/header";
 import Home from "../component/Home";
 import SideBar from "../component/sideBar";
 import PlayBar from "../component/playBar";
+import Artist from "../component/artist";
 
-const HomePage = ({children}) => {
+const ArtistPage = () => {
   return(
+    <>
     <SideBar>
       <Header>
-        <Home/>
+        <Artist/>
       </Header>
-      <PlayBar/>
     </SideBar>
+    </>
   )
 }
 
-export default HomePage;
+export default ArtistPage;

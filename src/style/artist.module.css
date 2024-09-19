@@ -1,0 +1,84 @@
+.profileContainer{
+  width: 76.5vw;
+  height: 13.5rem;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  margin-left: 3.5rem;
+  margin-top: 9rem;
+  display: flex;
+}
+
+.profileImg{
+  width: 14.5rem;
+  height: 14.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo{
+  width: 97%;
+  height: 97%;
+  background-color: gray;
+}
+
+.NameContainer{
+  margin-top: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.nickName{
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 1.5rem;
+}
+
+.follow{
+  width: 6rem;
+  height: 1.5rem;
+  border: 1px solid white;
+  margin-top: 0.1rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.iconContainer{
+  display: flex;
+  align-items: center;
+  margin-left: 1.8rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.userIcon{
+  font-size: 1.2rem;
+}
+
+.followNum{
+  margin-left: 0.5rem;
+  font-weight: 100;
+}
+
+.bottomContainer{
+  width: 100%;
+  height: 30rem;
+  background: linear-gradient(to bottom, #616161, #B9B9B9);
+}
+
+@media (max-width: 1200px) {
+  .bottomContainer{
+    width: 100vw;
+  }
+
+  .profileContainer{
+    width: 100vw;
+  }
+}

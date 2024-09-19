@@ -2,6 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import HomePage from './Page/HomePage';
+import ArtistPage from './Page/ArtistPage';
 import {RouterProvider} from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -11,6 +12,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='/' element={<HomePage />}></Route>
+          <Route path='/artist' element={<ArtistPage />}></Route>
         </Routes>
       </Router>
     </Provider>
