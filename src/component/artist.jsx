@@ -8,7 +8,7 @@ const Artist = () => {
         <div className={styles.profileImg}>
           <div className={styles.photo}></div>
         </div>
-        <div>
+        <div className={styles.textContainer}>
           <div className={styles.NameContainer}>
             <div className={styles.nickName}>분탕충</div>
             <div className={styles.follow}>Follow</div>
@@ -17,10 +17,10 @@ const Artist = () => {
               <FaUserCheck className={styles.userIcon}/>
               <div className={styles.followNum}>22</div>
           </div>
-          <div className={styles.categoty}>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className={styles.category}>
+            <div className={styles.Tracks}>Tracks</div>
+            <div className={styles.popularTracks}>Popular Tracks</div>
+            <div className={styles.Playlists}>Playlists</div>
           </div>
         </div>
       </div>

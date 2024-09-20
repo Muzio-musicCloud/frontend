@@ -1,7 +1,10 @@
+.textContainer{
+  flex-grow: 1
+}
+
 .profileContainer{
   width: 76.5vw;
   height: 13.5rem;
-  border-bottom: 1px solid rgb(150, 150, 150);
   margin-left: 3.5rem;
   margin-top: 9rem;
   display: flex;
@@ -71,6 +74,57 @@
   width: 100%;
   height: 30rem;
   background: linear-gradient(to bottom, #616161, #B9B9B9);
+}
+
+.category{
+  width: auto;
+  height: 3rem;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  margin-top: 2.7rem;
+  display: flex;
+}
+
+.Tracks{
+  color: white;
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 -3px 0 0 rgb(255, 255, 255);
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  text-shadow: 0 0 1px rgb(255, 255, 255);
+  margin-left: 2rem;
+}
+
+.popularTracks{
+  color: white;
+  width: 10rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  text-shadow: 0 0 1px rgb(255, 255, 255);
+  margin-left: 1.5rem;
+}
+
+.Playlists{
+  color: white;
+  width: 5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  text-shadow: 0 0 1px rgb(255, 255, 255);
+  margin-left: 1.3rem;
 }
 
 @media (max-width: 1200px) {
