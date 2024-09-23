@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import styles from "../style/artist.module.css";
 import { FaUserCheck } from "react-icons/fa";
+import { FaCirclePlay } from "react-icons/fa6";
+import { FiSend } from "react-icons/fi";
+import { FaCommentAlt } from "react-icons/fa";
 
 const Artist = () => {
   const [activeCategory, setActiveCategory] = useState('Tracks');
+  const [view, setView] = useState(true);
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
+  };
+
+  const viewContaier = () => {
+    setView(prevView => !prevView);
   };
 
   return (
@@ -49,7 +57,95 @@ const Artist = () => {
         <div>
           <div className={styles.trash}></div>
           <div className={styles.songsContainer}>
-
+            <div className={styles.songs}>
+              <div className={styles.cover}></div>
+              <div className={styles.contaienr}>
+                <div className={styles.playContiner}>
+                  <FaCirclePlay className={styles.playIcon}/>
+                  <div className={styles.texts}>
+                    <div className={styles.artist}>김성훈</div>
+                    <div className={styles.title}>나는 코딩이 싫어</div>
+                  </div>
+                  <div className={styles.day}>2024.09.23</div>
+                </div>
+                <div className={styles.playBarContainer}>
+                  <div className={styles.startTime}>0:00</div>
+                    <div className={styles.playBar}>
+                      <div className={styles.playTime}></div>
+                    </div>
+                    <div className={styles.endTime}>3:53</div>
+                  </div>
+                <div className={styles.commentsContainer}>
+                  <div className={styles.commentsProfile}></div>
+                  <input type='text' className={styles.commentsInput} placeholder='메세지를 입력하세요  '></input>
+                  <div className={styles.sendButton}><FiSend className={styles.send}/></div>
+                  <div className={styles.comments}><FaCommentAlt className={styles.commentsIcon} onClick={() => {viewContaier()}}/> 22</div>
+                </div>
+              </div>
+            </div>
+            {view && (
+                <div className={styles.hiddenContainer}>
+                  <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              )}
+              <div className={styles.songs}>
+              <div className={styles.cover}></div>
+              <div className={styles.contaienr}>
+                <div className={styles.playContiner}>
+                  <FaCirclePlay className={styles.playIcon}/>
+                  <div className={styles.texts}>
+                    <div className={styles.artist}>김성훈</div>
+                    <div className={styles.title}>나는 코딩이 싫어</div>
+                  </div>
+                  <div className={styles.day}>2024.09.23</div>
+                </div>
+                <div className={styles.playBarContainer}>
+                  <div className={styles.startTime}>0:00</div>
+                    <div className={styles.playBar}>
+                      <div className={styles.playTime}></div>
+                    </div>
+                    <div className={styles.endTime}>3:53</div>
+                  </div>
+                <div className={styles.commentsContainer}>
+                  <div className={styles.commentsProfile}></div>
+                  <input type='text' className={styles.commentsInput} placeholder='메세지를 입력하세요  '></input>
+                  <div className={styles.sendButton}><FiSend className={styles.send}/></div>
+                  <div className={styles.comments}><FaCommentAlt className={styles.commentsIcon} onClick={() => {viewContaier()}}/> 22</div>
+                </div>
+              </div>
+            </div>
+            
+              <div className={styles.songs}>
+              <div className={styles.cover}></div>
+              <div className={styles.contaienr}>
+                <div className={styles.playContiner}>
+                  <FaCirclePlay className={styles.playIcon}/>
+                  <div className={styles.texts}>
+                    <div className={styles.artist}>김성훈</div>
+                    <div className={styles.title}>나는 코딩이 싫어</div>
+                  </div>
+                  <div className={styles.day}>2024.09.23</div>
+                </div>
+                <div className={styles.playBarContainer}>
+                  <div className={styles.startTime}>0:00</div>
+                    <div className={styles.playBar}>
+                      <div className={styles.playTime}></div>
+                    </div>
+                    <div className={styles.endTime}>3:53</div>
+                  </div>
+                <div className={styles.commentsContainer}>
+                  <div className={styles.commentsProfile}></div>
+                  <input type='text' className={styles.commentsInput} placeholder='메세지를 입력하세요  '></input>
+                  <div className={styles.sendButton}><FiSend className={styles.send}/></div>
+                  <div className={styles.comments}><FaCommentAlt className={styles.commentsIcon} onClick={() => {viewContaier()}}/> 22</div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
         <div className={styles.ffContainer}>

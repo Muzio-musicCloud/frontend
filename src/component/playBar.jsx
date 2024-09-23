@@ -41,11 +41,11 @@ const PlayBar = () => {
           <FiRepeat className={styles.playIcons}/>
         </div>
         <div className={styles.playBarContainer}>
-          <div className={styles.startTime}>0:00</div>
+          <div className={styles.startTime}>-:--</div>
           <div className={styles.playBar}>
             <div className={styles.playTime}></div>
           </div>
-          <div className={styles.endTime}>0:00</div>
+          <div className={styles.endTime}>-:--</div>
         </div>
         <div className={styles.bottomLine}></div>
         <div className={styles.nextPlay}>다음 재생</div>
