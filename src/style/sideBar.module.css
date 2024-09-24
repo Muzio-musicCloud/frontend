@@ -3,7 +3,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #4E4E4E, #939393);
+  background: linear-gradient(to bottom, #3d3d3d, #939393);
 }
 
 .container {
@@ -104,7 +104,7 @@ body {
 .title.scrolled {
   border-right: none;
   border-bottom: 1px solid rgb(150, 150, 150);
-  background-color: #565656;
+  background-color: #4a4a4a;
 }
 
 .veiwIcon {

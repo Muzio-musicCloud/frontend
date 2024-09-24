@@ -4,10 +4,11 @@ import { FaUserCheck } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
 import { FiSend } from "react-icons/fi";
 import { FaCommentAlt } from "react-icons/fa";
+import { FaUserGroup } from "react-icons/fa6";
 
 const Artist = () => {
   const [activeCategory, setActiveCategory] = useState('Tracks');
-  const [view, setView] = useState(true);
+  const [view, setView] = useState(false);
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
   };
@@ -149,9 +150,93 @@ const Artist = () => {
           </div>
         </div>
         <div className={styles.ffContainer}>
-          <div className={styles.allNumContainer}></div>
-          <div className={styles.followContainer}></div>
-          <div className={styles.followingContainer}></div>
+          <div className={styles.allNumContainer}>
+            <div className={styles.numContainer}>
+              <div className={styles.FollowersContainer}>
+                <div className={styles.Followers}>Followers</div>
+                <div className={styles.FollowersNum}>4,689</div>
+              </div>
+              <div className={styles.FollowersContainer}>
+                <div className={styles.Followers}>Following</div>
+                <div className={styles.FollowersNum}>44</div>
+              </div>
+              <div className={styles.FollowersContainer}>
+                <div className={styles.Followers}>Tracks</div>
+                <div className={styles.FollowersNum}>22</div>
+              </div>
+            </div>
+            <div className={styles.Introduction}>다시 태어나자</div>
+            <div className={styles.FollowersNumberContainer}>
+              <FaUserCheck className={styles.FollowersIcon}/>
+              <div className={styles.FollowersNumber}>4,689 followers</div>
+              <div className={styles.all}>모두보기</div>
+            </div>
+          </div>
+          <div className={styles.followContainer}>
+            <div className={styles.Vowels}>
+              <div className={styles.FollowersProfile}>
+                <div className={styles.FollowersprofileImg}></div>
+              </div>
+              <div className={styles.FollowersProfile}>
+                <div className={styles.FollowersprofileImg}></div>
+              </div>
+              <div className={styles.FollowersProfile}>
+                <div className={styles.FollowersprofileImg}></div>
+              </div>
+              <div className={styles.FollowersProfile}>
+                <div className={styles.FollowersprofileImg}></div>
+              </div>
+              <div className={styles.FollowersProfile}>
+                <div className={styles.FollowersprofileImg}></div>
+              </div>
+              <div className={styles.FollowersProfile}>
+                <div className={styles.FollowersprofileImg}></div>
+              </div>
+              <div className={styles.FollowersProfile}>
+                <div className={styles.FollowersprofileImg}></div>
+              </div>
+            </div>
+            <div className={styles.FollowersNumberContainer}>
+              <FaUserGroup className={styles.FollowersIcon}/>
+              <div className={styles.FollowersNumber}>44 following</div>
+              <div className={styles.all}>모두보기</div>
+            </div>
+          </div>
+          <div className={styles.followingContainer}>
+            <div className={styles.followingTextContainer}>
+              <div className={styles.followingProfile}></div>
+              <div className={styles.followTextContainer}>
+                <div className={styles.followingName}>HLE</div>
+                <div className={styles.followingFollowers}>
+                  <FaUserGroup className={styles.FaUserGroup}/>
+                  22
+                </div>
+              </div>
+              <div className={styles.FollowButton}>Follow</div>
+            </div>
+            <div className={styles.followingTextContainer}>
+              <div className={styles.followingProfile}></div>
+              <div className={styles.followTextContainer}>
+                <div className={styles.followingName}>HLE</div>
+                <div className={styles.followingFollowers}>
+                  <FaUserGroup className={styles.FaUserGroup}/>
+                  22
+                </div>
+              </div>
+              <div className={styles.FollowButton}>Follow</div>
+            </div>
+            <div className={styles.followingTextContainer}>
+              <div className={styles.followingProfile}></div>
+              <div className={styles.followTextContainer}>
+                <div className={styles.followingName}>HLE</div>
+                <div className={styles.followingFollowers}>
+                  <FaUserGroup className={styles.FaUserGroup}/>
+                  22
+                </div>
+              </div>
+              <div className={styles.FollowButton}>Follow</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

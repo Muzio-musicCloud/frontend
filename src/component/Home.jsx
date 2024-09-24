@@ -1,6 +1,4 @@
 import styles from "../style/home.module.css";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { IoMenu } from "react-icons/io5";
 
 const Home = () => {
   return(
