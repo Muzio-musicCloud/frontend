@@ -8,7 +8,6 @@ const useAuth = () => {
     const login = async (credentials) => {
         try {
             setLoading(true);
-            // API 호출을 통해 사용자 인증 수행
             const userData = await api.login(credentials);
             setUser(userData);
         } catch (err) {
