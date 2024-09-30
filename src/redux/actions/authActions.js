@@ -8,6 +8,14 @@ export const SIGN_UP_REQUEST = 'SIGN_UP_REQUEST';
 export const SIGN_UP_SUCCESS = 'SIGN_UP_SUCCESS';
 export const SIGN_UP_FAILURE = 'SIGN_UP_FAILURE';
 
+const validateUsername = (username) => {
+  return username.length >= 4 && username.length < 30;
+};
+
+const validateNickname = (nickname) => {
+  return nickname.length <= 40; 
+};
+
 export const signIn = (email, password) => async (dispatch) => {
   dispatch({ type: SIGN_IN_REQUEST });
 
@@ -26,8 +34,15 @@ export const signIn = (email, password) => async (dispatch) => {
   }
 };
 
-export const signUp = (username, password, confirmPassword, email) => async (dispatch) => {
+export const signUp = (username, password, confirmPassword, email, nickname) => async (dispatch) => {
   dispatch({ type: SIGN_UP_REQUEST });
+
+  if (!validateNickname(nickname)) {
+    return dispatch({
+      type: SIGN_UP_FAILURE,
+      error: '닉네임은 최대 40자까지 가능합니다.'
+    });
+  }
 
   if (password !== confirmPassword) {
     return dispatch({
@@ -36,8 +51,15 @@ export const signUp = (username, password, confirmPassword, email) => async (dis
     });
   }
 
+  if (!validateUsername(username)) {
+    return dispatch({
+      type: SIGN_UP_FAILURE,
+      error: '아이디는 4자 이상 30자 미만이어야 합니다.'
+    });
+  }
+
   try {
-    const response = await axios.post('/api/signup', { username, password, email });
+    const response = await axios.post('/api/signup', { username, password, email, nickname });
     dispatch({
       type: SIGN_UP_SUCCESS,
       payload: response.data,

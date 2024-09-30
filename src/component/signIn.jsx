@@ -9,12 +9,14 @@ const SignIn = () => {
   const [signUp1, setSignUp1] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  
+  
   const [id, setId] = useState('');
   const [username, setUsername] = useState('');
   const [signPassword, setSignPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [signEmail, setSignEmail] = useState('');
+  const [nickname, setNickname] = useState('');
 
   const dispatch = useDispatch();
   const { loading, isAuthenticated, error } = useSelector((state) => state.auth);
@@ -24,7 +26,7 @@ const SignIn = () => {
   };
 
   const handleSignUp = () => {
-    dispatch(signUp(username, password, confirmPassword, email)); 
+    dispatch(signUp(username, signPassword, confirmPassword, signEmail, nickname));
   };
 
   const register = () => {
@@ -74,20 +76,20 @@ const SignIn = () => {
         <div className={styles.SignUpContainer}>
             <div className={styles.signUpText}>회원가입</div>
             <div className={styles.inputContainer}>
-              <div className={styles.inputText}>닉네암</div>
+              <div className={styles.inputText}>닉네임</div>
               <input type="text"
-                placeholder="example@xxxx.com"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)} 
+                placeholder="용감한 물개86"
+                value={nickname}
+                onChange={(e) => setNickname(e.target.value)}
                 className={styles.input}>
               </input>
             </div>
             <div className={styles.inputContainer}>
               <div className={styles.inputText}>아이디</div>
               <input type="text"
-                placeholder="영문자, 숫자, 특수문자 중 2가지 이상 포함"
-                value={id}
-                onChange={(e) => setId(e.target.value)}
+                placeholder="최소 3자에서 최대 30자"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 className={styles.input}>
               </input>
             </div>

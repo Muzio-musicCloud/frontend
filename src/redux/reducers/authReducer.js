@@ -1,4 +1,3 @@
-// reducers/authReducer.js
 import {
   SIGN_UP_REQUEST,
   SIGN_UP_SUCCESS,
