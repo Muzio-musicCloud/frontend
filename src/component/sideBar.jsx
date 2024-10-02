@@ -4,10 +4,13 @@ import { IoHomeSharp } from "react-icons/io5";
 import { MdFeed, MdLibraryBooks } from "react-icons/md";
 import { IoMusicalNotes } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 const SideBar = ({ children }) => {
   const [isTop, setIsTop] = useState(true);
   const [sideBar, setSideBar] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +29,14 @@ const SideBar = ({ children }) => {
     setSideBar(prevSideBar => !prevSideBar);
   };
 
+  const feed = () => {
+    navigate("/feed");
+  }
+
+  const home = () => {
+    navigate("/");
+  }
+
   return (
     <div className={styles.headerContainer}>
       <IoMenu className={styles.veiwIcon} onClick={viewContaier} />
@@ -37,11 +48,11 @@ const SideBar = ({ children }) => {
         </div>
         <div className={styles.subContainer}>
           <div className={styles.menuContainer}>
-            <div className={styles.home}>
+            <div className={styles.home} onClick={() => {home()}}>
               <IoHomeSharp className={styles.icon} />
               <div className={styles.menu}>홈</div>
             </div>
-            <div className={styles.feed}>
+            <div className={styles.feed} onClick={() => {feed()}}>
               <MdFeed className={styles.icon} />
               <div className={styles.menu}>피드</div>
             </div>

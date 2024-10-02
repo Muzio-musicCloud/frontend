@@ -44,6 +44,11 @@ body {
   margin-bottom: 1.3rem;
   color: white;
   background-color: #696969;
+  cursor: pointer;
+}
+
+.home:hover{
+  background-color: #727272;
 }
 
 .feed{
@@ -55,6 +60,11 @@ body {
   border-radius: 20px;
   margin-bottom: 1.3rem;
   color: white;
+  cursor: pointer;
+}
+
+.feed:hover{
+  background-color: #727272;
 }
 
 .Library{
@@ -68,6 +78,10 @@ body {
   color: white;
 }
 
+.Library:hover{
+  background-color: #727272;
+}
+
 .song{
   display: flex;
   width: 90%;
@@ -77,6 +91,10 @@ body {
   border-radius: 20px;
   margin-bottom: 1.3rem;
   color: white;
+}
+
+.song:hover{
+  background-color: #727272;
 }
 
 .icon {
