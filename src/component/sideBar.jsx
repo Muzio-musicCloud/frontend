@@ -75,11 +75,11 @@ const SideBar = ({ children }) => {
         </div>
         <div className={styles.subContainer}>
           <div className={styles.menuContainer}>
-            <div className={styles.home}>
+            <div className={styles.home} onClick={() => {home()}}>
               <IoHomeSharp className={styles.icon} />
               <div className={styles.menu}>홈</div>
             </div>
-            <div className={styles.feed}>
+            <div className={styles.feed} onClick={() => {feed()}}>
               <MdFeed className={styles.icon} />
               <div className={styles.menu}>피드</div>
             </div>

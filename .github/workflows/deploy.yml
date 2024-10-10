@@ -21,7 +21,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /root/muzio-frontend
+          cd /root/workflows/deploy/muzio/frontend
           git pull origin master
           chmod +x deploy.sh
           ./deploy.sh
